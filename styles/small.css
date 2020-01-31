@@ -1,0 +1,370 @@
+ /* ------------------------------------------------------------------------------------------------------------------------------
+              B&M Storage - Small
+ ------------------------------------------------------------------------------------------------------------------------------ 
+ Basic outline
+- Home
+- Info 
+- Register
+- Create Account  
+- Contact
+
+Colors & Fonts:
+H1 & H2 - font-family: 'IM Fell Great Primer SC', serif;
+p - font-family: 'Raleway', sans-serif;
+#929E9A - Teal Green
+#BBC0C6 - Light Gray
+#717277 - Dark Gray
+#F2F2F2 - Off White
+#3D322F - Red Brown
+ */
+ @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+ 
+ body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: auto;
+}
+ /* Logo & text */
+.headings{
+  /* background-repeat: no-repeat; */
+  width: 100%;;
+}
+
+.header{
+  width: 100%;
+}
+ /* The Padlock */
+.Site-Logo{
+    width: 100%;
+    margin-top: 0em;
+    margin-bottom: -4em;
+}
+
+h1 {
+  color:  #111826;
+  font-size: 25px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  text-align: center;
+  text-shadow: 2px 2px  #8F94A6  ;
+  letter-spacing: 18px;
+}
+
+
+h2 {
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+ font-family: 'Raleway', sans-serif;
+ text-align: center;
+ padding: 0.25em;
+ text-shadow: 2px 2px rgb(193, 193, 193);
+ border-radius: 15px;
+}
+
+h3 {
+ color: #111826  ;
+ font-size: 25px;
+ border-radius: 5px;
+ font-family: 'Rock Salt', cursive;
+ text-align: center;
+ margin-top: 1em;
+ display: block;
+ text-align: center;
+ padding: 0.5em;
+}
+
+h4 {
+ color: rgb(0, 0, 0);
+ font-size: 30px;
+ /* border-radius: 5px; */
+ font-family: 'Ubuntu', cursive;
+ z-index: 2;
+ text-align: center;
+ margin-left: 2em;
+ margin-right: 2em;
+ text-shadow: 2px 2px rgb(193, 193, 193);
+ font-style: bold;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------
+            Parrallax Images HOME
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+.parallax-home{
+  /* The image used */
+  background-image: url("../images/opendoor1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -10;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: inital;
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.top-container {
+  background-color: #f1f1f1;
+  /* padding: 30px; */
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.top-container {
+  background-color: #f1f1f1;
+  /* padding: 30px; */
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* NAVIGATION */
+     
+nav {
+  margin: 0 auto;
+  width: 100%;
+  background-image: url("../images/openunit.jpg");
+  background-size: cover;
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+   text-align: center;
+   overflow: hidden;
+   animation-name: close;
+   animation-duration: .6s;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: backwards;
+   animation-play-state: running;
+ }
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  z-index: 5;
+  color: #f1f1f1;
+
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+
+}
+
+.navigation a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(136, 165, 165, 0.633);
+}
+
+ul:nth-child(3) {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  list-style: circle;
+}
+
+
+.responsive li {
+  background-image: url("/images/Asset\ 24@3x.png");
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  animation-name: menu, close;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  display: block;
+  background-repeat: no-repeat;
+}
+      @keyframes menu{
+          0%{
+              opacity: 0
+          }
+              
+          100%{
+              opacity: 1
+          }
+      }
+
+a.active {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.666);
+  background-color: rgba(208, 214, 26, 0.387);
+
+}
+
+.homepage-sections{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+
+.image-test{
+  background-image: url("/images/opendoor.jpg");
+  z-index: 10;
+}
+
+
+#cta{
+  z-index: -10;
+}
+
+.call-to-action{
+  margin-top: 5em;
+  display: block;
+}
+
+p.intro-p {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  color: black;
+  font-family: 'Rock Salt', crusive;
+  text-align: center;
+  font-size: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.25em;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  background-color: #FFCC66;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'IM Fell Great Primer SC', serif;
+
+  
+}
+
+.banner-h2{
+    display: none;
+}
+
+.call-to-action{
+  background-image: url("../images/cardboard-texture.jpg");
+}
+
+/* Set a style for the submit button */
+.cta {
+  /* background-color: #4CAF50; */
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.cta:hover {
+  opacity: 1;
+}
+
+.cta-h2 {
+  font-family: 'Ubuntu', cursive;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   border-bottom: 5px solid black;
+   text-align: center;
+   padding: 0.25em;
+   text-shadow: 2px 2px rgb(193, 193, 193);
+   border-radius: 15px;
+   margin-top: -0.75em;
+ }
+
+ .unit-image{
+  width: 90%;
+  margin-top: 1em;
+}
+
+
+.unit-1
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-box-top2.jpg");
+}
+
+.unit-2
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture3.jpg");
+}
+
+.unit-3
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture4.jpg");
+}
+
+.unit-4
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture2.jpg");
+}
+
+
+.info{
+  margin-top: 0em;
+  /* border-style: groove; */
+}
+
+.company-motto{
+  background-image: url("../images/cardboard-tex.jpg");
+}
+
+.contact{
+  background-image: url("../images/cardboard-texture2.jpg");
+  text-align: center;
+  display: block;
+}
+
+.footer{
+  background-image: url("../images/footer.jpg");
+  margin-top: -1em;
+
+}
