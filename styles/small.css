@@ -20,6 +20,8 @@ p - font-family: 'Raleway', sans-serif;
  @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap');
  
  body {
   margin: 0;
@@ -40,7 +42,7 @@ p - font-family: 'Raleway', sans-serif;
 .Site-Logo{
     width: 100%;
     margin-top: 0em;
-    margin-bottom: -4em;
+    margin-bottom: -2em;
 }
 
 h1 {
@@ -56,7 +58,7 @@ h1 {
 h2 {
  color: rgb(0, 0, 0);
  font-size: 35px;
- font-family: 'Raleway', sans-serif;
+ font-family: 'Rock Salt', sans-serif;
  text-align: center;
  padding: 0.25em;
  text-shadow: 2px 2px rgb(193, 193, 193);
@@ -64,15 +66,13 @@ h2 {
 }
 
 h3 {
- color: #111826  ;
- font-size: 25px;
- border-radius: 5px;
- font-family: 'Rock Salt', cursive;
- text-align: center;
- margin-top: 1em;
- display: block;
- text-align: center;
- padding: 0.5em;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-family: 'Rock Salt', sans-serif;
+  text-align: center;
+  padding: 0.25em;
+  text-shadow: 2px 2px rgb(193, 193, 193);
+  border-radius: 15px;
 }
 
 h4 {
@@ -88,6 +88,16 @@ h4 {
  font-style: bold;
 }
 
+p{
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 20px;
+}
+
+.info-sections li{
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 1em;
+}
 /* -----------------------------------------------------------------------------------------------------------------------------
             Parrallax Images HOME
 -----------------------------------------------------------------------------------------------------------------------------*/
@@ -105,7 +115,7 @@ h4 {
   background-size: inital;
   height: 100%; 
   /* Center and scale the image nicely */
-  background-position: bottom;
+  background-position: bottom 30px right -150px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -121,13 +131,6 @@ h4 {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-
-.top-container {
-  background-color: #f1f1f1;
-  /* padding: 30px; */
-  text-align: center;
 }
 
 .content {
@@ -166,8 +169,8 @@ nav {
   text-align: center;
   padding: 0;
   z-index: 5;
-  color: #f1f1f1;
-
+  color: #000000;
+  font-family: 'IM Fell Great Primer SC', serif;
 }
 
 .navigation li:first-child {
@@ -181,16 +184,15 @@ nav {
 
 .navigation a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: #181818;
   text-align: center;
   text-decoration: none;
 }
 
 .navigation a:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgba(136, 165, 165, 0.633);
-}
+  color: rgb(224, 224, 224);
 
+}
 ul:nth-child(3) {
   display: block;
   padding: 0.75rem;
@@ -225,9 +227,9 @@ ul:nth-child(3) {
       }
 
 a.active {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.666);
-  background-color: rgba(208, 214, 26, 0.387);
+  background-color: rgba(204, 204, 204, 0.387);
 
 }
 
@@ -237,6 +239,34 @@ a.active {
   z-index: 0;
   margin-top: 0em;
   margin-bottom: 1em;
+}
+
+.homepage-h2{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture.jpg");
+}
+
+.information-h2{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture.jpg");
+  font-family: 'IM Fell Great Primer SC', serif; 
+}
+
+.expectation-section{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture.jpg");
 }
 
 
@@ -274,9 +304,7 @@ p.intro-p {
   background-color: #FFCC66;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'IM Fell Great Primer SC', serif;
-
-  
+  font-family: 'IM Fell Great Primer SC', serif;  
 }
 
 .banner-h2{
@@ -324,6 +352,8 @@ p.intro-p {
   margin-top: 1em;
   margin-bottom: 1em;
   background-image: url("../images/cardboard-box-top2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .unit-2
@@ -331,6 +361,8 @@ p.intro-p {
   margin-top: 1em;
   margin-bottom: 1em;
   background-image: url("../images/cardboard-texture3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .unit-3
@@ -338,6 +370,8 @@ p.intro-p {
   margin-top: 1em;
   margin-bottom: 1em;
   background-image: url("../images/cardboard-texture4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .unit-4
@@ -345,26 +379,69 @@ p.intro-p {
   margin-top: 1em;
   margin-bottom: 1em;
   background-image: url("../images/cardboard-texture2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.info-1, .info-2, .info-3, .info-4
+{
+  margin: 1em;
+  background-image: url("../images/cardboard-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.registration-link {
+  display: block;
+  margin-top: 1em;
+  color: black;
+}
 
 .info{
   margin-top: 0em;
+  background-color: rgb(255, 252, 233);
+  padding: 2em;
   /* border-style: groove; */
+}
+
+.details p{
+  /* padding:1em; */
+  font-size: 40px;
+}
+
+.details h3{
+  padding-top:1em;
 }
 
 .company-motto{
   background-image: url("../images/cardboard-tex.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact{
+  font-family: 'IM Fell Great Primer SC', serif;
   background-image: url("../images/cardboard-texture2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   display: block;
 }
 
+iframe
+
+.phone-number{
+  font-family: 'IM Fell Great Primer SC', serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  font-size: 35px;
+}
+
 .footer{
   background-image: url("../images/footer.jpg");
-  margin-top: -1em;
-
+  margin-top: -2em;
 }

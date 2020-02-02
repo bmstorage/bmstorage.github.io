@@ -1,0 +1,56 @@
+@media (min-width: 1200px){
+
+    .content{
+        width: 55%;
+    display: block;
+    text-align: center;
+    /* background-color: #FFCC66; */
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.Site-Logo{
+    width: 35%;
+    margin-top: 0em;
+    margin: auto;
+    margin-bottom: -3em;
+    display: block;
+}
+
+.parallax-home{
+    background-image: url("../images/unit-photo-5.jpg");
+    background-position: bottom -450px right 50px;
+}
+
+p.intro-p{
+    font-size: 20px ;
+}
+
+.btn{
+    font-size: 30px;
+}
+
+p
+{
+font-size: 20px;
+}
+
+.navigation{
+    font-size: 20px;
+    margin: 0;
+}
+
+.navigation-responsive li{
+margin-top: 0em;
+}
+
+.responsive li{
+    width: 55%;
+    display: block;
+    text-align: center;
+    background-color: #FFCC66;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
