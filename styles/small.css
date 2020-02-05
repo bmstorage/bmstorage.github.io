@@ -43,6 +43,7 @@ p - font-family: 'Raleway', sans-serif;
     width: 100%;
     margin-top: 0em;
     margin-bottom: -2em;
+    border-style: outset;
 }
 
 h1 {
@@ -61,17 +62,17 @@ h2 {
  font-family: 'Rock Salt', sans-serif;
  text-align: center;
  padding: 0.25em;
- text-shadow: 2px 2px rgb(193, 193, 193);
+ /* text-shadow: 2px 2px rgb(193, 193, 193); */
  border-radius: 15px;
 }
 
 h3 {
   color: rgb(0, 0, 0);
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Rock Salt', sans-serif;
   text-align: center;
   padding: 0.25em;
-  text-shadow: 2px 2px rgb(193, 193, 193);
+  /* text-shadow: 2px 2px rgb(193, 193, 193); */
   border-radius: 15px;
 }
 
@@ -84,7 +85,7 @@ h4 {
  text-align: center;
  margin-left: 2em;
  margin-right: 2em;
- text-shadow: 2px 2px rgb(193, 193, 193);
+ /* text-shadow: 2px 2px rgb(193, 193, 193); */
  font-style: bold;
 }
 
@@ -133,6 +134,10 @@ p{
   width: 100%;
 }
 
+.content{
+  margin-top: 2em;
+}
+
 .content {
   padding: 16px;
 }
@@ -148,7 +153,6 @@ p{
 nav {
   margin: 0 auto;
   width: 100%;
-  background-image: url("../images/openunit.jpg");
   background-size: cover;
   position: absolute;
   display: block;
@@ -169,7 +173,7 @@ nav {
   text-align: center;
   padding: 0;
   z-index: 5;
-  color: #000000;
+  color: #ffffff;
   font-family: 'IM Fell Great Primer SC', serif;
 }
 
@@ -184,9 +188,11 @@ nav {
 
 .navigation a {
   display: block;
-  color: #181818;
+  color: black;
   text-align: center;
   text-decoration: none;
+  padding-top: 1em;
+  margin-top: -1.5em;
 }
 
 .navigation a:hover {
@@ -195,15 +201,15 @@ nav {
 }
 ul:nth-child(3) {
   display: block;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   text-align: center;
   list-style: circle;
 }
 
 
 .responsive li {
-  background-image: url("/images/Asset\ 24@3x.png");
-  height: 150px;
+  background-image: url("../images/closed-door.jpg");
+  height: 200px;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -239,7 +245,10 @@ a.active {
   z-index: 0;
   margin-top: 0em;
   margin-bottom: 1em;
+  margin: auto;
+  text-align: center;
 }
+
 
 .homepage-h2{
   display: block;
@@ -248,6 +257,7 @@ a.active {
   margin-top: 1em;
   margin-bottom: 1em;
   background-image: url("../images/cardboard-texture.jpg");
+  font-size: 20px;
 }
 
 .information-h2{
@@ -266,7 +276,8 @@ a.active {
   z-index: 0;
   margin-top: 0em;
   margin-bottom: 1em;
-  background-image: url("../images/cardboard-texture.jpg");
+  background-image: url("../images/cardboard-texture2.jpg");
+  padding: 10px;
 }
 
 
@@ -336,13 +347,13 @@ p.intro-p {
    border-bottom: 5px solid black;
    text-align: center;
    padding: 0.25em;
-   text-shadow: 2px 2px rgb(193, 193, 193);
+   /* text-shadow: 2px 2px rgb(193, 193, 193); */
    border-radius: 15px;
    margin-top: -0.75em;
  }
 
  .unit-image{
-  width: 90%;
+  width: 65%;
   margin-top: 1em;
 }
 
@@ -385,12 +396,12 @@ p.intro-p {
 
 .info-1, .info-2, .info-3, .info-4
 {
-  margin: 1em;
+  /* margin: 1em; */
   background-image: url("../images/cardboard-texture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 
 .registration-link {
@@ -404,16 +415,21 @@ p.intro-p {
   background-color: rgb(255, 252, 233);
   padding: 2em;
   /* border-style: groove; */
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .details p{
   /* padding:1em; */
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .details h3{
   padding-top:1em;
+  font-size: 20px;
 }
+
+
 
 .company-motto{
   background-image: url("../images/cardboard-tex.jpg");
@@ -421,13 +437,17 @@ p.intro-p {
   background-size: cover;
 }
 
-.contact{
-  font-family: 'IM Fell Great Primer SC', serif;
-  background-image: url("../images/cardboard-texture2.jpg");
+.contact {
+  background-image: url("../images/cardboard-texture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   display: block;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 2em;
 }
 
 iframe
@@ -438,10 +458,97 @@ iframe
   background-size: cover;
   text-align: center;
   display: block;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .footer{
   background-image: url("../images/footer.jpg");
   margin-top: -2em;
+  font-family: 'IM Fell Great Primer SC', serif;
 }
+
+
+
+/* Form CSS */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: 2em;
+  background-image: url("../images/cardboard-texture2.jpg");
+  padding: 2em;
+  font-size: 20px;
+  margin-bottom: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DurationDate{
+display: inline-block;
+min-width: 200px;
+}
+
+label{
+  display: inline-block;
+  min-width: 200px;
+
+}
+
+form div{
+  margin-top: 10px;
+}
+
+
+.align-top{
+  vertical-align: top;
+}
+
+.flex{
+display: block;
+margin-bottom: 3em;
+}
+
+
+.flexly {
+  display: flex;
+  align-items: center;
+}
+
+
+
+#stormSeverity{
+  margin-left: 5em;
+ /* border: 5px solid orange; */
+ width: 180px;
+}
+
+#commentBox{
+  margin-left: -1.8em;
+}
+
+#submitReset{
+  margin-bottom: 3em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+#stormRegion{
+  width: 165px;
+}
+
+.noMargin {
+  margin-left: 12em;
+}
+
+
+
+/* ------------------------------------------
+THESE ARE THE Thanks Page RULES
+-------------------------------------- */
+
+.stormCenterParagraphs{
+font-size: 15px;
+text-align: center;
+}
+

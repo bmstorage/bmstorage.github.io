@@ -6,6 +6,8 @@
     margin: auto;
   }
 
+
+
   .navigation {
     list-style: none;
     text-align: center;
@@ -13,7 +15,6 @@
     z-index: 10;
     color: #f1f1f1;
     font-size: 50px;
-    ;
     margin-top: -0.25em;
   }
 
@@ -35,6 +36,7 @@
   .homepage-sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
   }
 
 
@@ -52,6 +54,7 @@
     border-color: rgb(136, 105, 58);
   }
 
+  
   .expectation-section {
     font-size: 30px;
     padding: 1em;
@@ -69,27 +72,30 @@
     font-size: 50px;
   }
 
+  .navigation a {
+    margin-top: -1.25em;
+    color:black;
+    font-size: 30px;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
   .responsive li {
-    background-image: url("/images/Asset\ 24@3x.png");
-    height: 250px;
+    background-image: url("../images/closed-door.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
     width: 100%;
-    background-position: center;
     background-size: cover;
-    position: relative;
-    z-index: 3;
     animation-name: menu, close;
-    animation-duration: .6s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
     display: block;
     background-repeat: no-repeat;
 
   }
 
   .navigation a {
-    margin-top: -0.25em;
+    margin-top: -1.25em;
+    color:black;
+    font-size: 30px;
   }
 }

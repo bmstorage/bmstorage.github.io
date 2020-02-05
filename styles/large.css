@@ -1,25 +1,29 @@
 @media (min-width: 1200px){
 
     .content{
-        width: 55%;
+    width: 50%;
     display: block;
     text-align: center;
-    /* background-color: #FFCC66; */
     margin-left: auto;
     margin-right: auto;
     }
 
 .Site-Logo{
-    width: 35%;
+    width: 50%;
     margin-top: 0em;
     margin: auto;
     margin-bottom: -3em;
     display: block;
 }
 
+.unit-image{
+    width:500px;
+    margin: 1em;
+}
+
 .parallax-home{
     background-image: url("../images/unit-photo-5.jpg");
-    background-position: bottom -450px right 50px;
+    background-position: bottom -150px right 50px;
 }
 
 p.intro-p{
@@ -30,27 +34,61 @@ p.intro-p{
     font-size: 30px;
 }
 
+section.details p{
+    font-size: 20px;
+}
+
+.details img{
+    width: 200px;
+}
+
 p
 {
 font-size: 20px;
 }
 
+h3{
+    font-size: 20px;
+}
+
+
 .navigation{
     font-size: 20px;
     margin: 0;
+    padding: 0;
 }
+.navigation a {
+    margin-top: -0.5em;
+    color:black;
+    font-size: 30px;
+  }
 
 .navigation-responsive li{
 margin-top: 0em;
+padding: 0;
+color: white;
 }
 
 .responsive li{
+    background-repeat: no-repeat;
     width: 55%;
     display: block;
     text-align: center;
-    background-color: #FFCC66;
+    /* background-color: #FFCC66; */
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    color: white;
+    height: 250px;
+
+}
+
+.footer{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 }
