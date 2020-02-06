@@ -20,7 +20,7 @@
 
  
 .responsive li {
-  height: 165px;
+  height: 300px;
 }
 
   p {
@@ -82,7 +82,8 @@
 
 @media only screen and (min-width: 1000px) {
   .responsive li {
-    background-image: url("../images/closed-door.jpg");
+    /* background-image: url("../images/closed-door.jpg");
+     */
     background-repeat: no-repeat;
     height: 350px;
     width: 100%;

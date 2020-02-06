@@ -42,8 +42,8 @@ p - font-family: 'Raleway', sans-serif;
 .Site-Logo{
     width: 100%;
     margin-top: 0em;
-    margin-bottom: -2em;
-    border-style: outset;
+    margin-bottom: -0.2em;
+    /* border-style: outset; */
 }
 
 h1 {
@@ -196,7 +196,7 @@ nav {
 }
 
 .navigation a:hover {
-  color: rgb(224, 224, 224);
+color: rgb(6, 143, 97);
 
 }
 ul:nth-child(3) {
@@ -209,28 +209,26 @@ ul:nth-child(3) {
 
 .responsive li {
   background-image: url("../images/closed-door.jpg");
+  background-color: white;
   height: 200px;
   width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 3;
-  animation-name: menu, close;
-  animation-duration: .6s;
+  animation-name: menu;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   display: block;
   background-repeat: no-repeat;
 }
       @keyframes menu{
-          0%{
-              opacity: 0
-          }
-              
-          100%{
-              opacity: 1
-          }
+        0%   {top: -1000px;}
+        100% {top: 0px;}
       }
+
+    
 
 a.active {
   color: rgb(0, 0, 0);
@@ -292,7 +290,7 @@ a.active {
 }
 
 .call-to-action{
-  margin-top: 5em;
+  margin-top: 1em;
   display: block;
 }
 
@@ -550,5 +548,10 @@ THESE ARE THE Thanks Page RULES
 .stormCenterParagraphs{
 font-size: 15px;
 text-align: center;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 

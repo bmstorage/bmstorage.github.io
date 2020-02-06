@@ -12,7 +12,7 @@
     width: 50%;
     margin-top: 0em;
     margin: auto;
-    margin-bottom: -3em;
+    margin-bottom: -1em;
     display: block;
 }
 
@@ -58,9 +58,9 @@ h3{
     padding: 0;
 }
 .navigation a {
-    margin-top: -0.5em;
+    margin-top: -1.25em;
     color:black;
-    font-size: 30px;
+    font-size: 20px;
   }
 
 .navigation-responsive li{
@@ -70,8 +70,7 @@ color: white;
 }
 
 .responsive li{
-    background-repeat: no-repeat;
-    width: 55%;
+    width: 50%;
     display: block;
     text-align: center;
     /* background-color: #FFCC66; */
@@ -79,9 +78,15 @@ color: white;
     margin-right: auto;
     padding: 0;
     color: white;
-    height: 150px;
+    height: 250px;
+    background-repeat: no-repeat;
+
 
 }
+ .phone-number, .registration-link{
+     font-size: 20px;
+ }
+
 
 .footer{
     display: block;
