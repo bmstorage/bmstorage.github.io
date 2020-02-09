@@ -26,25 +26,42 @@ p - font-family: 'Raleway', sans-serif;
  body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  margin: auto;
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
 }
  /* Logo & text */
 .headings{
   /* background-repeat: no-repeat; */
   width: 100%;;
+  display: block;
 }
 
 .header{
   width: 100%;
 }
+
+div.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-left: -0.25em;
+  /* background-color: yellow; */
+  /* padding: 50px; */
+  /* font-size: 20px; */
+}
+
  /* The Padlock */
 .Site-Logo{
     width: 100%;
-    margin-top: 0em;
-    margin-bottom: -0.2em;
-    /* border-style: outset; */
+    z-index: 10;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
+
 
 h1 {
   color:  #111826;
@@ -94,6 +111,10 @@ p{
   font-size: 20px;
 }
 
+.info-sections{
+  margin-left: 4em;
+  margin-right: 4em;
+}
 .info-sections li{
   font-size: 20px;
   text-align: left;
@@ -105,7 +126,7 @@ p{
 
 .parallax-home{
   /* The image used */
-  background-image: url("../images/opendoor1.jpg");
+  background-image: url("../images/open-unit.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -10;
@@ -116,9 +137,10 @@ p{
   background-size: inital;
   height: 100%; 
   /* Center and scale the image nicely */
-  background-position: bottom 30px right -150px;
+  background-position: bottom 0px right -100px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
+
 }
 
 
@@ -136,105 +158,102 @@ p{
 
 .content{
   margin-top: 2em;
-}
-
-.content {
-  padding: 16px;
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 102%;
 }
 
 /* NAVIGATION */
-     
-nav {
-  margin: 0 auto;
-  width: 100%;
-  background-size: cover;
-  position: absolute;
+.main-menu-button{
+  color: white;
   display: block;
-  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-   text-align: center;
-   overflow: hidden;
-   animation-name: close;
-   animation-duration: .6s;
-   animation-timing-function: ease-in-out;
-   animation-fill-mode: backwards;
-   animation-play-state: running;
- }
-
-.navigation {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  z-index: 5;
-  color: #ffffff;
-  font-family: 'IM Fell Great Primer SC', serif;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-
-.navigation li {
-  display: none;
-
-}
-
-.navigation a {
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 1em;
-  margin-top: -1.5em;
-}
-
-.navigation a:hover {
-color: rgb(6, 143, 97);
-
-}
-ul:nth-child(3) {
-  display: block;
-  /* padding: 0.75rem; */
-  text-align: center;
-  list-style: circle;
+ text-align: center;
+ font-family: 'IM Fell Great Primer SC', serif; 
+ margin-top: -0.25em;
+ background-image: url('../images/texture.png');
+ background-size: cover;
+ font-size: 25px;
+ padding: 5px;
 }
 
 
-.responsive li {
-  background-image: url("../images/closed-door.jpg");
-  background-color: white;
-  height: 200px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 3;
-  animation-name: menu;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  display: block;
+.holder{
+  background-image: url("../images/unit-door-pattern.png");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50;
+  /* margin-top: -2em; */
 }
-      @keyframes menu{
-        0%   {top: -1000px;}
-        100% {top: 0px;}
-      }
 
-    
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: -10;
+  left: 0;
+  margin-right: 50px;
+  overflow-y: hidden;
+  transition: 0.25s;
+  background-image: url('../images/texture.png');
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -0.5em;
+}
 
-a.active {
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.666);
-  background-color: rgba(204, 204, 204, 0.387);
+.overlay-content {
+  position: relative;
+  /* top: 25%; */
+  width: 100%;
+  text-align: center;
+  /* margin-top: -20px; */
 
+}
+
+.overlay a {
+  padding: 32px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: 'IM Fell Great Primer SC', serif; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  font-size: 60px;
+  z-index: 5;
+  color: darkred;
+  /* margin-bottom: -10em; */
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
 
 .homepage-sections{
@@ -276,6 +295,7 @@ a.active {
   margin-bottom: 1em;
   background-image: url("../images/cardboard-texture2.jpg");
   padding: 10px;
+  background-size: contain;
 }
 
 
@@ -355,6 +375,10 @@ p.intro-p {
   margin-top: 1em;
 }
 
+.unit-1, .unit-2, .unit-3, .unit-4{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
 
 .unit-1
 {
@@ -369,7 +393,7 @@ p.intro-p {
 {
   margin-top: 1em;
   margin-bottom: 1em;
-  background-image: url("../images/cardboard-texture3.jpg");
+  background-image: url("../images/cardboard-texture5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -392,15 +416,6 @@ p.intro-p {
   background-size: cover;
 }
 
-.info-1, .info-2, .info-3, .info-4
-{
-  /* margin: 1em; */
-  background-image: url("../images/cardboard-texture.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding: 1em;
-}
 
 .registration-link {
   display: block;
@@ -409,12 +424,17 @@ p.intro-p {
 }
 
 .info{
-  margin-top: 0em;
-  background-color: rgb(255, 252, 233);
+
+  margin: 0 auto;
+  margin-left: 2em;
+  background-image: url("../images/cardboard-texture2.jpg");
   padding: 2em;
-  /* border-style: groove; */
-  margin-left: 1em;
-  margin-right: 1em;
+  font-size: 20px;
+  margin-bottom: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
 }
 
 .details p{
@@ -428,15 +448,8 @@ p.intro-p {
 }
 
 
-
-.company-motto{
-  background-image: url("../images/cardboard-tex.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .contact {
-  background-image: url("../images/cardboard-texture.jpg");
+  background-image: url("../images/cardboard-texture2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -446,6 +459,12 @@ p.intro-p {
   display: block;
   font-size: 20px;
   padding-bottom: 2em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  
 }
 
 iframe
@@ -465,8 +484,9 @@ iframe
   font-family: 'IM Fell Great Primer SC', serif;
 }
 
-
-
+.footer-text{
+  font-family: 'IM Fell Great Primer SC', serif;
+}
 /* Form CSS */
 
 form {

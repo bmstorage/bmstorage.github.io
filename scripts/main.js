@@ -1,3 +1,4 @@
+
 window.onscroll = function() {stickyFunction()};
 
 var header = document.getElementById("myHeader");
@@ -11,8 +12,11 @@ function stickyFunction() {
   }
 }
 
-function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
 }
 
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
 

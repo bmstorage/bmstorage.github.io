@@ -1,27 +1,28 @@
 @media only screen and (min-width: 750px) {
   body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     margin: auto;
   }
 
-
-
-  .navigation {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    z-index: 10;
-    color: #f1f1f1;
-    font-size: 50px;
-    margin-top: -0.25em;
+  .parallax-home{
+    /* The image used */
+    background-image: url("../images/open-unit.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -10;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: inital;
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: bottom 0px right -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
   }
-
- 
-.responsive li {
-  height: 300px;
-}
 
   p {
     font-size: 35px;
@@ -36,6 +37,7 @@
   .homepage-sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* background-color: yellow; */
 
   }
 
@@ -72,31 +74,9 @@
     font-size: 50px;
   }
 
-  .navigation a {
-    margin-top: -1.25em;
-    color:black;
-    font-size: 30px;
-  }
 
 }
 
 @media only screen and (min-width: 1000px) {
-  .responsive li {
-    /* background-image: url("../images/closed-door.jpg");
-     */
-    background-repeat: no-repeat;
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    animation-name: menu, close;
-    display: block;
-    background-repeat: no-repeat;
-
-  }
-
-  .navigation a {
-    margin-top: -1.25em;
-    color:black;
-    font-size: 30px;
-  }
+ 
 }

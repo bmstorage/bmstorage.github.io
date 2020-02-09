@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/small.css">
     <link rel="stylesheet" href="./styles/small-medium.css">
     <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/large.css"> 
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
@@ -24,131 +24,135 @@
 <body>
     <div class="parallax-home">
 
-        <div class="header" id="myHeader">
-            <section class="headings">
-                <!-- <h1 class="logo-box-1">B&M  STORAGE</h1> -->
-                <!-- motto or slogan: This needs work -->
-                <!-- <div class='moto'>Simple Storage. Affordable pricing.</div> -->
-                <img class="Site-Logo" src="./images/Thinner Banner.jpg" alt="Logo of a Lock">
-                <div class="navigation-grid-hamburger">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./info.html"> Info / Units</a></li>
-                            <li><a class="active"  href="./register.html">Register</a></li>
-                            <!-- <li><a href="./account.html">Create Account</a></li> -->
-                            <!-- <li><a href="./contact.html">Contact</a></li> -->
-                        </ul>
-                    </nav>
+    <div class="header" id="myHeader">
+        <section class="headings">
+
+        <div class="sticky">
+        <img class="Site-Logo" src="./images/Thinner Banner.jpg" alt="Logo of a Lock">
+        </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a  onclick="closeNav()">Menu</a>
+                        <a href="./index.html">Home</a></li>
+                        <a href="./info.html"> Info / Units</a></li>
+                        <a class="active" href="./register.html">Register</a></li>
+                    </div>
                 </div>
             </section>
+        <div class="holder">
+        <span class="main-menu-button" onclick="openNav()">&#9776; Menu</span>
         </div>
-        
+    </div>
+
+
+
+
         <div class="content">
-            <!--  A call to action to make a sign up for a unit  -->
-            <div class="image-test"></div>
 
-    <main id="stormCenterMain">
-                                <div class="parallax-storm-center">
-                        
-                               
-                  
-                                <!-- Generall this would be POST but we use get because GITHUB support only GET -->
-            <form action="./thanks.html" method="GET">
-
-                                    <h2 class="information-h2">Please Enter Your Information</h2>
-                        
-                                    <h2> Reserve your Unit:</h2>
-                                    <div>
-                                        <label for="fullName">Full Name: </label>
-                                        <input type="text" id="fullName" name="fullName" pattern=".{5,}" required>
-                                    </div>
-
-                                    <div>
-                                        <label for="email">Email: </label>
-                                        <input type="email" id="email" name="email" placeholder="example1@gmail.com">
-                                    </div>
-
-                                    <div>
-                                        <label for="phone">Phone Number: </label>
-                                        <input type="tel" id="phone" name="phone" required>
-                                    </div>
-
-                                    <div>
-                                        <label for="fullName">Address: </label>
-                                        <input type="text" id="address" name="address" required>
-                                    </div>
-
-                                    <div>
-                                        <label for="zipCode">Zip Code: </label>
-                                        <input type="number" id="zipCode" name="zipCode" required>
-                                    </div>
-
-                                            <div>
-                                                <label for="Region">Unit Type: </label>
-                                                <select name="cityList" id="Region">
-                                                    <option value="" selected disabled>Select Unit Size</option>
-                                                    <option value="Salt Lake">Small 10ft x 10ft</option>
-                                                    <option value="Fort Collins">Large 11ft x 24ft</option>
-                                                    <option value="Rome">Extra Large 22ft & 30ft</option>
-                                                    <option value="San Diego">RV/Boat Lot 11ft x 30ft </option>
-                                                </select>
-                                            </div>
-                                
-
-                                        <label for="DurationDate">Start Day: </label>
-                                        <input type="date" id="arrival" name="stormDate">
-                                
-                        
-                        <h2 class="information-h2">Please Enter Your Payment Information</h2>
+            <main id="stormCenterMain">
+                <!-- Generall this would be POST but we use get because GITHUB support only GET -->
+                <form action="../thanks.html" method="GET">
+                    <h2> Reserve your Unit:</h2>
 
 
-                          <div>
-                            <label for="fullName">Card Holders Name: </label>
-                            <input type="text" id="fullName" name="fullName" pattern=".{5,}" required>
-                        </div>
+                    <h2 class="information-h2">Please Enter Your Information</h2>
 
-                        <div>
-                            <label for="zipCode">Card Number: </label>
-                            <input type="number" id="zipCode" name="zipCode" pattern=".{16,}"  placeholder="8520025885200258" required>
-                        </div>
+                    <div>
+                        <label for="fullName">Full Name: </label>
+                        <input type="text" id="fullName" name="fullName" pattern=".{5,}" required>
+                    </div>
 
-                        <div>
-                            <label for="zipCode">Security Code: </label>
-                            <input type="number" id="zipCode" name="zipCode" pattern=".{3,}" placeholder="021" required>
-                        </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="example1@gmail.com">
+                    </div>
 
-                          <div>
-                            <label for="stormType"> Expiration Date: </label>
-                            <input list="stormTypes" id="stormType" name="stormType" placeholder="01/21">
-                            <datalist id="stormTypes">
-                                <option value="1"></option>
-                                <option value="2"></option>
-                                <option value="3"></option>
-                                <option value="4"></option>
-                            </datalist>
-                        </div>
+                    <div>
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
 
-                                    <div id="submitReset">
-                                        <input type="submit" value="Submit">
-                                        <input type="reset" value="Reset">
-                                    </div>
+                    <div>
+                        <label for="fullName">Address: </label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
 
-                        
-            </form>
+                    <div>
+                        <label for="zipCode">Zip Code: </label>
+                        <input type="number" id="zipCode" name="zipCode" required>
+                    </div>
 
-    </main>
+                    <div>
+                        <label for="Region">Unit Type: </label>
+                        <select name="cityList" id="Region">
+                            <option value="" selected disabled>Select Unit Size</option>
+                            <option value="Salt Lake">Small 10ft x 10ft</option>
+                            <option value="Fort Collins">Large 11ft x 24ft</option>
+                            <option value="Rome">Extra Large 22ft & 30ft</option>
+                            <option value="San Diego">RV/Boat Lot 11ft x 30ft </option>
+                        </select>
+                    </div>
 
-    <footer>
-        <div class="footer">
-            <p class='footer-text'>
-               &copy; <span id="currentDate">
-                    &star; B&M Storage
-                </span>
-            </p>
+
+                    <label for="DurationDate">Start Day: </label>
+                    <input type="date" id="arrival" name="stormDate">
+
+
+                    <h2 class="information-h2">Please Enter Your Payment Information</h2>
+
+
+                    <div>
+                        <label for="fullName">Card Holders Name: </label>
+                        <input type="text" id="fullName" name="fullName" pattern=".{5,}" required>
+                    </div>
+
+                    <div>
+                        <label for="zipCode">Card Number: </label>
+                        <input type="number" id="zipCode" name="zipCode" pattern=".{16,}" placeholder="8520025885200258"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="zipCode">Security Code: </label>
+                        <input type="number" id="zipCode" name="zipCode" pattern=".{3,}" placeholder="021" required>
+                    </div>
+
+                    <div>
+                        <label for="stormType"> Expiration Date: </label>
+                        <input list="stormTypes" id="stormType" name="stormType" placeholder="01/21">
+                        <datalist id="stormTypes">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </datalist>
+                    </div>
+
+                    <div id="submitReset">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+
+
+                </form>
+            </main>
         </div>
-    </footer>
+
+        <footer>
+            <div class="footer">
+                <p class='footer-text'>
+                    &copy; <span id="currentDate">
+                        &star; B&M Storage
+                    </span>
+                </p>
+            </div>
+        </footer>
+
+        </div>
+
+       
+    
     <script src="./scripts/main.js"> </script>
     <script src="./scripts/adjustRating.js"></script>
 
@@ -156,9 +160,3 @@
 </body>
 
 </html>
-
-
-
-   
-
-

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
 
     <title> Homepage </title>
     <!-- Home Page for B&M Storage-->
@@ -24,32 +24,33 @@
 <body>
     <div class="parallax-home">
 
-        <div class="header" id="myHeader">
-            <section class="headings">
-                <!-- <h1 class="logo-box-1">B&M  STORAGE</h1> -->
-                <!-- motto or slogan: This needs work -->
-                <!-- <div class='moto'>Simple Storage. Affordable pricing.</div> -->
-                <img class="Site-Logo" src="./images/Thinner Banner.jpg" alt="Logo of a Lock">
-                <div class="navigation-grid-hamburger">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                            <li><a class="active" href="./index.html">Home</a></li>
-                            <li><a href="./info.html"> Info / Units</a></li>
-                            <li><a href="./register.html">Register</a></li>
-                            <!-- <li><a href="./account.html">Create Account</a></li> -->
-                            <!-- <li><a href="./contact.html">Contact</a></li> -->
-                        </ul>
-                    </nav>
+    <div class="header" id="myHeader">
+        <section class="headings">
+
+        <div class="sticky">
+        <img class="Site-Logo" src="./images/Thinner Banner.jpg" alt="Logo of a Lock">
+        </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a  onclick="closeNav()">Menu</a>
+                        <a href="./index.html">Home</a></li>
+                        <a href="./info.html"> Info / Units</a></li>
+                        <a class="active" href="./register.html">Register</a></li>
+                    </div>
                 </div>
             </section>
+
+        <div class="holder">
+        <span class="main-menu-button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
         </div>
+    </div>
 
-        <div class="content">
+
+
+        <div class="content-main">
             <!--  A call to action to make a sign up for a unit  -->
-            <div class="image-test"></div>
-
-            <section class = "call-to-action">
+               <section class = "call-to-action">
                 <!-- Call To Action-->
                 <section class="cta-img">
                     <p class="intro-p">
@@ -134,9 +135,7 @@
                 </div>
             </section>
            
-    </div>
-    </div>
-    </div>
+   
     <footer>
         <div class="footer">
             <p class='footer-text'>
@@ -146,8 +145,11 @@
             </p>
         </div>
     </footer>
+</div>
+</div>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/clickContact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </body>
 
