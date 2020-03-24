@@ -1,15 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BMStorage.Models
 {
-   public class AccountType
+   public class UserType
    {
-      [Display(Name = "Account Type ID")]
-      public int AccountTypeID { get; set; }
+      [Display(Name = "User Type ID")]
+      public int UserTypeID { get; set; }
+      public string Type { get; set; }
 
-      public string AccountTypeName { get; set; }
-      
    }
 }
