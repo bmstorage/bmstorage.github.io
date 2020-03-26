@@ -1,0 +1,14 @@
+[
+    {
+        "UserTypeID":  "1",
+        "Type":  "Owner"
+    },
+    {
+        "UserTypeID":  "2",
+        "Type":  "Employee"
+    },
+    {
+        "UserTypeID":  "3",
+        "Type":  "Tenant"
+    }
+]
