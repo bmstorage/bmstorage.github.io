@@ -187,3 +187,12 @@ E:\Users\Owner\Documents\GitHub\bmstorage.github.io\BMStorageWebApp\obj\Debug\ne
 E:\Users\Owner\Documents\GitHub\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\Razor\Views\UserTypes\Details.cshtml.g.cs
 E:\Users\Owner\Documents\GitHub\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\Razor\Views\UserTypes\Edit.cshtml.g.cs
 E:\Users\Owner\Documents\GitHub\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\Razor\Views\UserTypes\Index.cshtml.g.cs
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.csprojAssemblyReference.cache
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.csproj.CoreCompileInputs.cache
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.MvcApplicationPartsAssemblyInfo.cache
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.RazorAssemblyInfo.cache
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.RazorAssemblyInfo.cs
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.AssemblyInfoInputs.cache
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.AssemblyInfo.cs
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.dll
+C:\users\ryanlukecross\documents\2020_Winter\storage\bmstorage.github.io\BMStorageWebApp\obj\Debug\netcoreapp3.1\BMStorage.pdb

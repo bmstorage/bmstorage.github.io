@@ -12,9 +12,9 @@ namespace BMStorage.Models
 
       public int UnitID { get; set; }
 
-        public int TenantID { get; set; }
+      public int TenantID { get; set; }
 
-        public int EmployeeID { get; set; }
+      public int EmployeeID { get; set; }
 
       public DateTime StartDate { get; set; }
 
@@ -28,9 +28,12 @@ namespace BMStorage.Models
       //public User Tenant { get; set; }
       //public User Employee { get; set; }
 
-        public User Tenant { get; set; }
+      [foreignKey("TenantID")]
+      public User Tenant { get; set; }
 
-        public User Employee { get; set; }
+      [foreignKey("EmployeeID")]
 
-    }
+      public User Employee { get; set; }
+
+   }
 }
