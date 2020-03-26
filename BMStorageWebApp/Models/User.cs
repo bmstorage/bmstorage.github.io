@@ -31,5 +31,7 @@ namespace BMStorage.Models
       public string ZipCode { get; set; }
 
 
-   }
+       //public ICollection<Unit> Units { get; set; }
+        
+    }
 }

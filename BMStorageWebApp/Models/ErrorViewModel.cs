@@ -1,6 +1,6 @@
 using System;
 
-namespace BMStorageWebApp.Models
+namespace BMStorage.Models
 {
     public class ErrorViewModel
     {

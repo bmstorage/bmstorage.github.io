@@ -13,6 +13,7 @@ function stickyFunction() {
 }
 
 function openNav() {
+  scrollToTop();
   document.getElementById("myNav").style.height = "100%";
 }
 
@@ -20,3 +21,6 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+function scrollToTop() { 
+   $(window).scrollTop(0); 
+  }

@@ -29,7 +29,21 @@
      width: 65%;
       }
 
+      .Site-Logo{
+        width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
 
+      }
+
+      .sticky{
+          background: url("../images/Artboard\ 5.png");
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
     
 
     .header{
@@ -40,8 +54,8 @@
         text-align: center;
     }
 
-    .content{
-    width: 100%;
+    .content-main{
+    width: 75%;
     display: block;
     text-align: center;
     margin-left: auto;
@@ -54,6 +68,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.stormCenterMain, .information-h2, .content {
+    width: 75%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 }

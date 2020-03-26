@@ -1,0 +1,5 @@
+﻿UnitTypeID,UnitTypeName,Width,Depth,Height,Price
+1,Small,10,10,10,40
+2,Medium,11,24,20,70
+3,Large,22,30,20,140
+4,Lot,11,30,50,70

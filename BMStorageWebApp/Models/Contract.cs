@@ -12,9 +12,9 @@ namespace BMStorage.Models
 
       public int UnitID { get; set; }
 
-      public int TenantID { get; set; }
+        public int TenantID { get; set; }
 
-      public int EmployeeID { get; set; }
+        public int EmployeeID { get; set; }
 
       public DateTime StartDate { get; set; }
 
@@ -25,8 +25,12 @@ namespace BMStorage.Models
       /* https://docs.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key */
       // Link to Microsoft Docs for double Navigation Property Helps
       public Unit Unit { get; set; }
-      public User Tenant { get; set; }
-      public User Employee { get; set; }
+      //public User Tenant { get; set; }
+      //public User Employee { get; set; }
 
-   }
+        public User Tenant { get; set; }
+
+        public User Employee { get; set; }
+
+    }
 }
