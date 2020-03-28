@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BMStorage.Models;
 
-namespace MvcMovie.Controllers
+namespace BMStorage.Controllers
 {
    public class HomeController : Controller
    {

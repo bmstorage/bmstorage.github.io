@@ -1,502 +1,501 @@
-[
-    {
-        "UnitID":  "100",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A1"
+[{
+        "UnitID": "100",
+        "UnitTypeID": "1",
+        "UnitLocation": "A1"
     },
     {
-        "UnitID":  "101",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A2"
+        "UnitID": "101",
+        "UnitTypeID": "1",
+        "UnitLocation": "A2"
     },
     {
-        "UnitID":  "102",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A3"
+        "UnitID": "102",
+        "UnitTypeID": "1",
+        "UnitLocation": "A3"
     },
     {
-        "UnitID":  "103",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A4"
+        "UnitID": "103",
+        "UnitTypeID": "1",
+        "UnitLocation": "A4"
     },
     {
-        "UnitID":  "104",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A5"
+        "UnitID": "104",
+        "UnitTypeID": "1",
+        "UnitLocation": "A5"
     },
     {
-        "UnitID":  "105",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A6"
+        "UnitID": "105",
+        "UnitTypeID": "1",
+        "UnitLocation": "A6"
     },
     {
-        "UnitID":  "106",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A7"
+        "UnitID": "106",
+        "UnitTypeID": "1",
+        "UnitLocation": "A7"
     },
     {
-        "UnitID":  "107",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A8"
+        "UnitID": "107",
+        "UnitTypeID": "1",
+        "UnitLocation": "A8"
     },
     {
-        "UnitID":  "108",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A9"
+        "UnitID": "108",
+        "UnitTypeID": "1",
+        "UnitLocation": "A9"
     },
     {
-        "UnitID":  "109",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A10"
+        "UnitID": "109",
+        "UnitTypeID": "1",
+        "UnitLocation": "A10"
     },
     {
-        "UnitID":  "110",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A11"
+        "UnitID": "110",
+        "UnitTypeID": "1",
+        "UnitLocation": "A11"
     },
     {
-        "UnitID":  "111",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A12"
+        "UnitID": "111",
+        "UnitTypeID": "1",
+        "UnitLocation": "A12"
     },
     {
-        "UnitID":  "112",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A13"
+        "UnitID": "112",
+        "UnitTypeID": "1",
+        "UnitLocation": "A13"
     },
     {
-        "UnitID":  "113",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A14"
+        "UnitID": "113",
+        "UnitTypeID": "1",
+        "UnitLocation": "A14"
     },
     {
-        "UnitID":  "114",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A15"
+        "UnitID": "114",
+        "UnitTypeID": "1",
+        "UnitLocation": "A15"
     },
     {
-        "UnitID":  "115",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A16"
+        "UnitID": "115",
+        "UnitTypeID": "1",
+        "UnitLocation": "A16"
     },
     {
-        "UnitID":  "116",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A17"
+        "UnitID": "116",
+        "UnitTypeID": "1",
+        "UnitLocation": "A17"
     },
     {
-        "UnitID":  "117",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A18"
+        "UnitID": "117",
+        "UnitTypeID": "1",
+        "UnitLocation": "A18"
     },
     {
-        "UnitID":  "118",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A19"
+        "UnitID": "118",
+        "UnitTypeID": "1",
+        "UnitLocation": "A19"
     },
     {
-        "UnitID":  "119",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "A20"
+        "UnitID": "119",
+        "UnitTypeID": "1",
+        "UnitLocation": "A20"
     },
     {
-        "UnitID":  "120",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B1"
+        "UnitID": "120",
+        "UnitTypeID": "1",
+        "UnitLocation": "B1"
     },
     {
-        "UnitID":  "121",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B2"
+        "UnitID": "121",
+        "UnitTypeID": "1",
+        "UnitLocation": "B2"
     },
     {
-        "UnitID":  "122",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B3"
+        "UnitID": "122",
+        "UnitTypeID": "1",
+        "UnitLocation": "B3"
     },
     {
-        "UnitID":  "123",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B4"
+        "UnitID": "123",
+        "UnitTypeID": "1",
+        "UnitLocation": "B4"
     },
     {
-        "UnitID":  "124",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B5"
+        "UnitID": "124",
+        "UnitTypeID": "1",
+        "UnitLocation": "B5"
     },
     {
-        "UnitID":  "125",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B6"
+        "UnitID": "125",
+        "UnitTypeID": "1",
+        "UnitLocation": "B6"
     },
     {
-        "UnitID":  "126",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B7"
+        "UnitID": "126",
+        "UnitTypeID": "1",
+        "UnitLocation": "B7"
     },
     {
-        "UnitID":  "127",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B8"
+        "UnitID": "127",
+        "UnitTypeID": "1",
+        "UnitLocation": "B8"
     },
     {
-        "UnitID":  "128",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B9"
+        "UnitID": "128",
+        "UnitTypeID": "1",
+        "UnitLocation": "B9"
     },
     {
-        "UnitID":  "129",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B10"
+        "UnitID": "129",
+        "UnitTypeID": "1",
+        "UnitLocation": "B10"
     },
     {
-        "UnitID":  "130",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B11"
+        "UnitID": "130",
+        "UnitTypeID": "1",
+        "UnitLocation": "B11"
     },
     {
-        "UnitID":  "131",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B12"
+        "UnitID": "131",
+        "UnitTypeID": "1",
+        "UnitLocation": "B12"
     },
     {
-        "UnitID":  "132",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B13"
+        "UnitID": "132",
+        "UnitTypeID": "1",
+        "UnitLocation": "B13"
     },
     {
-        "UnitID":  "133",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B14"
+        "UnitID": "133",
+        "UnitTypeID": "1",
+        "UnitLocation": "B14"
     },
     {
-        "UnitID":  "134",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B15"
+        "UnitID": "134",
+        "UnitTypeID": "1",
+        "UnitLocation": "B15"
     },
     {
-        "UnitID":  "135",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B16"
+        "UnitID": "135",
+        "UnitTypeID": "1",
+        "UnitLocation": "B16"
     },
     {
-        "UnitID":  "136",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B17"
+        "UnitID": "136",
+        "UnitTypeID": "1",
+        "UnitLocation": "B17"
     },
     {
-        "UnitID":  "137",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B18"
+        "UnitID": "137",
+        "UnitTypeID": "1",
+        "UnitLocation": "B18"
     },
     {
-        "UnitID":  "138",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B19"
+        "UnitID": "138",
+        "UnitTypeID": "1",
+        "UnitLocation": "B19"
     },
     {
-        "UnitID":  "139",
-        "UnitTypeID":  "1",
-        "UnitLocation":  "B20"
+        "UnitID": "139",
+        "UnitTypeID": "1",
+        "UnitLocation": "B20"
     },
     {
-        "UnitID":  "140",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C1"
+        "UnitID": "140",
+        "UnitTypeID": "2",
+        "UnitLocation": "C1"
     },
     {
-        "UnitID":  "141",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C2"
+        "UnitID": "141",
+        "UnitTypeID": "2",
+        "UnitLocation": "C2"
     },
     {
-        "UnitID":  "142",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C3"
+        "UnitID": "142",
+        "UnitTypeID": "2",
+        "UnitLocation": "C3"
     },
     {
-        "UnitID":  "143",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C4"
+        "UnitID": "143",
+        "UnitTypeID": "2",
+        "UnitLocation": "C4"
     },
     {
-        "UnitID":  "144",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C5"
+        "UnitID": "144",
+        "UnitTypeID": "2",
+        "UnitLocation": "C5"
     },
     {
-        "UnitID":  "145",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C6"
+        "UnitID": "145",
+        "UnitTypeID": "2",
+        "UnitLocation": "C6"
     },
     {
-        "UnitID":  "146",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C7"
+        "UnitID": "146",
+        "UnitTypeID": "2",
+        "UnitLocation": "C7"
     },
     {
-        "UnitID":  "147",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C8"
+        "UnitID": "147",
+        "UnitTypeID": "2",
+        "UnitLocation": "C8"
     },
     {
-        "UnitID":  "148",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C9"
+        "UnitID": "148",
+        "UnitTypeID": "2",
+        "UnitLocation": "C9"
     },
     {
-        "UnitID":  "149",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C10"
+        "UnitID": "149",
+        "UnitTypeID": "2",
+        "UnitLocation": "C10"
     },
     {
-        "UnitID":  "150",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C11"
+        "UnitID": "150",
+        "UnitTypeID": "2",
+        "UnitLocation": "C11"
     },
     {
-        "UnitID":  "151",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C12"
+        "UnitID": "151",
+        "UnitTypeID": "2",
+        "UnitLocation": "C12"
     },
     {
-        "UnitID":  "152",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C13"
+        "UnitID": "152",
+        "UnitTypeID": "2",
+        "UnitLocation": "C13"
     },
     {
-        "UnitID":  "153",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C14"
+        "UnitID": "153",
+        "UnitTypeID": "2",
+        "UnitLocation": "C14"
     },
     {
-        "UnitID":  "154",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C15"
+        "UnitID": "154",
+        "UnitTypeID": "2",
+        "UnitLocation": "C15"
     },
     {
-        "UnitID":  "155",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C16"
+        "UnitID": "155",
+        "UnitTypeID": "2",
+        "UnitLocation": "C16"
     },
     {
-        "UnitID":  "156",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C17"
+        "UnitID": "156",
+        "UnitTypeID": "2",
+        "UnitLocation": "C17"
     },
     {
-        "UnitID":  "157",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C18"
+        "UnitID": "157",
+        "UnitTypeID": "2",
+        "UnitLocation": "C18"
     },
     {
-        "UnitID":  "158",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C19"
+        "UnitID": "158",
+        "UnitTypeID": "2",
+        "UnitLocation": "C19"
     },
     {
-        "UnitID":  "159",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "C20"
+        "UnitID": "159",
+        "UnitTypeID": "2",
+        "UnitLocation": "C20"
     },
     {
-        "UnitID":  "160",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D1"
+        "UnitID": "160",
+        "UnitTypeID": "2",
+        "UnitLocation": "D1"
     },
     {
-        "UnitID":  "161",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D2"
+        "UnitID": "161",
+        "UnitTypeID": "2",
+        "UnitLocation": "D2"
     },
     {
-        "UnitID":  "162",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D3"
+        "UnitID": "162",
+        "UnitTypeID": "2",
+        "UnitLocation": "D3"
     },
     {
-        "UnitID":  "163",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D4"
+        "UnitID": "163",
+        "UnitTypeID": "2",
+        "UnitLocation": "D4"
     },
     {
-        "UnitID":  "164",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D5"
+        "UnitID": "164",
+        "UnitTypeID": "2",
+        "UnitLocation": "D5"
     },
     {
-        "UnitID":  "165",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D6"
+        "UnitID": "165",
+        "UnitTypeID": "2",
+        "UnitLocation": "D6"
     },
     {
-        "UnitID":  "166",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D7"
+        "UnitID": "166",
+        "UnitTypeID": "2",
+        "UnitLocation": "D7"
     },
     {
-        "UnitID":  "167",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D8"
+        "UnitID": "167",
+        "UnitTypeID": "2",
+        "UnitLocation": "D8"
     },
     {
-        "UnitID":  "168",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D9"
+        "UnitID": "168",
+        "UnitTypeID": "2",
+        "UnitLocation": "D9"
     },
     {
-        "UnitID":  "169",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D10"
+        "UnitID": "169",
+        "UnitTypeID": "2",
+        "UnitLocation": "D10"
     },
     {
-        "UnitID":  "170",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D11"
+        "UnitID": "170",
+        "UnitTypeID": "2",
+        "UnitLocation": "D11"
     },
     {
-        "UnitID":  "171",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D12"
+        "UnitID": "171",
+        "UnitTypeID": "2",
+        "UnitLocation": "D12"
     },
     {
-        "UnitID":  "172",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D13"
+        "UnitID": "172",
+        "UnitTypeID": "2",
+        "UnitLocation": "D13"
     },
     {
-        "UnitID":  "173",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D14"
+        "UnitID": "173",
+        "UnitTypeID": "2",
+        "UnitLocation": "D14"
     },
     {
-        "UnitID":  "174",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D15"
+        "UnitID": "174",
+        "UnitTypeID": "2",
+        "UnitLocation": "D15"
     },
     {
-        "UnitID":  "175",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D16"
+        "UnitID": "175",
+        "UnitTypeID": "2",
+        "UnitLocation": "D16"
     },
     {
-        "UnitID":  "176",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D17"
+        "UnitID": "176",
+        "UnitTypeID": "2",
+        "UnitLocation": "D17"
     },
     {
-        "UnitID":  "177",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D18"
+        "UnitID": "177",
+        "UnitTypeID": "2",
+        "UnitLocation": "D18"
     },
     {
-        "UnitID":  "178",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D19"
+        "UnitID": "178",
+        "UnitTypeID": "2",
+        "UnitLocation": "D19"
     },
     {
-        "UnitID":  "179",
-        "UnitTypeID":  "2",
-        "UnitLocation":  "D20"
+        "UnitID": "179",
+        "UnitTypeID": "2",
+        "UnitLocation": "D20"
     },
     {
-        "UnitID":  "180",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E1"
+        "UnitID": "180",
+        "UnitTypeID": "3",
+        "UnitLocation": "E1"
     },
     {
-        "UnitID":  "181",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E2"
+        "UnitID": "181",
+        "UnitTypeID": "3",
+        "UnitLocation": "E2"
     },
     {
-        "UnitID":  "182",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E3"
+        "UnitID": "182",
+        "UnitTypeID": "3",
+        "UnitLocation": "E3"
     },
     {
-        "UnitID":  "183",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E4"
+        "UnitID": "183",
+        "UnitTypeID": "3",
+        "UnitLocation": "E4"
     },
     {
-        "UnitID":  "184",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E5"
+        "UnitID": "184",
+        "UnitTypeID": "3",
+        "UnitLocation": "E5"
     },
     {
-        "UnitID":  "185",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E6"
+        "UnitID": "185",
+        "UnitTypeID": "3",
+        "UnitLocation": "E6"
     },
     {
-        "UnitID":  "186",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E7"
+        "UnitID": "186",
+        "UnitTypeID": "3",
+        "UnitLocation": "E7"
     },
     {
-        "UnitID":  "187",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E8"
+        "UnitID": "187",
+        "UnitTypeID": "3",
+        "UnitLocation": "E8"
     },
     {
-        "UnitID":  "188",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E9"
+        "UnitID": "188",
+        "UnitTypeID": "3",
+        "UnitLocation": "E9"
     },
     {
-        "UnitID":  "189",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E10"
+        "UnitID": "189",
+        "UnitTypeID": "3",
+        "UnitLocation": "E10"
     },
     {
-        "UnitID":  "190",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E11"
+        "UnitID": "190",
+        "UnitTypeID": "3",
+        "UnitLocation": "E11"
     },
     {
-        "UnitID":  "191",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E12"
+        "UnitID": "191",
+        "UnitTypeID": "3",
+        "UnitLocation": "E12"
     },
     {
-        "UnitID":  "192",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E13"
+        "UnitID": "192",
+        "UnitTypeID": "3",
+        "UnitLocation": "E13"
     },
     {
-        "UnitID":  "193",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E14"
+        "UnitID": "193",
+        "UnitTypeID": "3",
+        "UnitLocation": "E14"
     },
     {
-        "UnitID":  "194",
-        "UnitTypeID":  "3",
-        "UnitLocation":  "E15"
+        "UnitID": "194",
+        "UnitTypeID": "3",
+        "UnitLocation": "E15"
     },
     {
-        "UnitID":  "195",
-        "UnitTypeID":  "4",
-        "UnitLocation":  "E16"
+        "UnitID": "195",
+        "UnitTypeID": "4",
+        "UnitLocation": "E16"
     },
     {
-        "UnitID":  "196",
-        "UnitTypeID":  "4",
-        "UnitLocation":  "E17"
+        "UnitID": "196",
+        "UnitTypeID": "4",
+        "UnitLocation": "E17"
     },
     {
-        "UnitID":  "197",
-        "UnitTypeID":  "4",
-        "UnitLocation":  "E18"
+        "UnitID": "197",
+        "UnitTypeID": "4",
+        "UnitLocation": "E18"
     },
     {
-        "UnitID":  "198",
-        "UnitTypeID":  "4",
-        "UnitLocation":  "E19"
+        "UnitID": "198",
+        "UnitTypeID": "4",
+        "UnitLocation": "E19"
     },
     {
-        "UnitID":  "199",
-        "UnitTypeID":  "4",
-        "UnitLocation":  "E20"
+        "UnitID": "199",
+        "UnitTypeID": "4",
+        "UnitLocation": "E20"
     }
 ]

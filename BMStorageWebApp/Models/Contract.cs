@@ -16,7 +16,8 @@ namespace BMStorage.Models
 
       public DateTime StartDate { get; set; }
 
-      public DateTime EndDate { get; set; }
+      public DateTime? EndDate { get; set; }
+      public static readonly DateTime END_OF_TIME = new DateTime(3000, 01, 01);
 
       /* Nagivation Properties */
 
