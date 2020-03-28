@@ -15,7 +15,7 @@ namespace BMStorage.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -26,28 +26,23 @@ namespace BMStorage.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("EmployeeID")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("TenantID")
+                    b.Property<int>("UnitID")
                         .HasColumnType("int");
 
-                    b.Property<int>("UnitID")
+                    b.Property<int>("UserID")
                         .HasColumnType("int");
 
                     b.HasKey("ContractID");
 
-                    b.HasIndex("EmployeeID");
-
-                    b.HasIndex("TenantID");
-
                     b.HasIndex("UnitID");
+
+                    b.HasIndex("UserID");
 
                     b.ToTable("Contract");
                 });
@@ -67,6 +62,8 @@ namespace BMStorage.Migrations
 
                     b.HasKey("UnitID");
 
+                    b.HasIndex("UnitTypeID");
+
                     b.ToTable("Unit");
                 });
 
@@ -78,23 +75,23 @@ namespace BMStorage.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<decimal>("Depth")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(6,2)");
 
                     b.Property<decimal>("Height")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(6,2)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(6,2)");
 
                     b.Property<string>("UnitTypeName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Width")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(6,2)");
 
                     b.HasKey("UnitTypeID");
 
-                    b.ToTable("UnitType_1");
+                    b.ToTable("UnitType");
                 });
 
             modelBuilder.Entity("BMStorage.Models.User", b =>
@@ -119,7 +116,7 @@ namespace BMStorage.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber")
+                    b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("State")
@@ -131,10 +128,12 @@ namespace BMStorage.Migrations
                     b.Property<int>("UserTypeID")
                         .HasColumnType("int");
 
-                    b.Property<string>("ZipCode")
+                    b.Property<string>("Zip")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserID");
+
+                    b.HasIndex("UserTypeID");
 
                     b.ToTable("User");
                 });
@@ -146,7 +145,7 @@ namespace BMStorage.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Type")
+                    b.Property<string>("UserTypeName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserTypeID");
@@ -156,21 +155,33 @@ namespace BMStorage.Migrations
 
             modelBuilder.Entity("BMStorage.Models.Contract", b =>
                 {
-                    b.HasOne("BMStorage.Models.User", "Employee")
-                        .WithMany()
-                        .HasForeignKey("EmployeeID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BMStorage.Models.User", "Tenant")
-                        .WithMany()
-                        .HasForeignKey("TenantID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("BMStorage.Models.Unit", "Unit")
                         .WithMany()
                         .HasForeignKey("UnitID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BMStorage.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BMStorage.Models.Unit", b =>
+                {
+                    b.HasOne("BMStorage.Models.UnitType", "UnitType")
+                        .WithMany()
+                        .HasForeignKey("UnitTypeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BMStorage.Models.User", b =>
+                {
+                    b.HasOne("BMStorage.Models.UserType", "UserType")
+                        .WithMany()
+                        .HasForeignKey("UserTypeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

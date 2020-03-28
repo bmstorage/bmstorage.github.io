@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +22,7 @@ namespace BMStorage.Controllers
         // GET: UnitTypes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.UnitType_1.ToListAsync());
+            return View(await _context.UnitTypes.ToListAsync());
         }
 
         // GET: UnitTypes/Details/5
@@ -33,7 +33,7 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var unitType = await _context.UnitType_1
+            var unitType = await _context.UnitTypes
                 .FirstOrDefaultAsync(m => m.UnitTypeID == id);
             if (unitType == null)
             {
@@ -73,7 +73,7 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var unitType = await _context.UnitType_1.FindAsync(id);
+            var unitType = await _context.UnitTypes.FindAsync(id);
             if (unitType == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var unitType = await _context.UnitType_1
+            var unitType = await _context.UnitTypes
                 .FirstOrDefaultAsync(m => m.UnitTypeID == id);
             if (unitType == null)
             {
@@ -139,15 +139,15 @@ namespace BMStorage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var unitType = await _context.UnitType_1.FindAsync(id);
-            _context.UnitType_1.Remove(unitType);
+            var unitType = await _context.UnitTypes.FindAsync(id);
+            _context.UnitTypes.Remove(unitType);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UnitTypeExists(int id)
         {
-            return _context.UnitType_1.Any(e => e.UnitTypeID == id);
+            return _context.UnitTypes.Any(e => e.UnitTypeID == id);
         }
     }
 }

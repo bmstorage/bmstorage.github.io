@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using BMStorage.Models;
 
 namespace BMStorage.Data
@@ -10,12 +11,15 @@ namespace BMStorage.Data
       {
       }
 
-      public override void OnModelCreating(ModelBuilder modelBuilder)
+      public DbSet<UserType> UserTypes { get; set; }
+      public DbSet<User> Users { get; set; }
+      public DbSet<UnitType> UnitTypes { get; set; }
+      public DbSet<Unit> Units { get; set; }
+      public DbSet<Contract> Contracts { get; set; }
+
+      protected override void OnModelCreating(ModelBuilder modelBuilder)
       {
-         modelBuilder.Entity<Contract>().HasRequired(m => m.TenantID)
-                                 .WithMany(m => m.Contract).HasForeignKey(m => m.TenantID);
-         modelBuilder.Entity<Contract>().HasRequired(m => m.EmployeeID)
-                                 .WithMany().HasForeignKey(m => m.EmployeeID);
+
       }
 
       public DbSet<Contract> Contract { get; set; }

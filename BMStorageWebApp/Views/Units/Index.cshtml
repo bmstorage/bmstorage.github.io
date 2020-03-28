@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BMStorage.Models.Unit>
+@model IEnumerable<BMStorage.Models.Unit>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.UnitTypeID)
+                @Html.DisplayNameFor(model => model.UnitLocation)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UnitLocation)
+                @Html.DisplayNameFor(model => model.UnitType)
             </th>
             <th></th>
         </tr>
@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.UnitTypeID)
+                @Html.DisplayFor(modelItem => item.UnitLocation)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UnitLocation)
+                @Html.DisplayFor(modelItem => item.UnitType.UnitTypeID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.UnitID">Edit</a> |

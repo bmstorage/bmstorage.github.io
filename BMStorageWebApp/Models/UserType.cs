@@ -9,7 +9,9 @@ namespace BMStorage.Models
    {
       [Display(Name = "User Type ID")]
       public int UserTypeID { get; set; }
-      public string Type { get; set; }
+
+      [Display(Name = "User Type Name")]
+      public string UserTypeName { get; set; }
 
    }
 }

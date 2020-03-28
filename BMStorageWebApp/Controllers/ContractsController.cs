@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +22,7 @@ namespace BMStorage.Controllers
         // GET: Contracts
         public async Task<IActionResult> Index()
         {
-            var bMStorageContext = _context.Contract.Include(c => c.Employee).Include(c => c.Tenant).Include(c => c.Unit);
+            var bMStorageContext = _context.Contracts.Include(c => c.Unit).Include(c => c.User);
             return View(await bMStorageContext.ToListAsync());
         }
 
@@ -34,10 +34,9 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var contract = await _context.Contract
-                .Include(c => c.Employee)
-                .Include(c => c.Tenant)
+            var contract = await _context.Contracts
                 .Include(c => c.Unit)
+                .Include(c => c.User)
                 .FirstOrDefaultAsync(m => m.ContractID == id);
             if (contract == null)
             {
@@ -50,9 +49,8 @@ namespace BMStorage.Controllers
         // GET: Contracts/Create
         public IActionResult Create()
         {
-            ViewData["EmployeeID"] = new SelectList(_context.User, "UserID", "UserID");
-            ViewData["TenantID"] = new SelectList(_context.User, "UserID", "UserID");
-            ViewData["UnitID"] = new SelectList(_context.Unit, "UnitID", "UnitID");
+            ViewData["UnitID"] = new SelectList(_context.Units, "UnitID", "UnitID");
+            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID");
             return View();
         }
 
@@ -61,7 +59,7 @@ namespace BMStorage.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ContractID,UnitID,TenantID,EmployeeID,StartDate,EndDate")] Contract contract)
+        public async Task<IActionResult> Create([Bind("ContractID,UnitID,UserID,StartDate,EndDate")] Contract contract)
         {
             if (ModelState.IsValid)
             {
@@ -69,9 +67,8 @@ namespace BMStorage.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EmployeeID"] = new SelectList(_context.User, "UserID", "UserID", contract.EmployeeID);
-            ViewData["TenantID"] = new SelectList(_context.User, "UserID", "UserID", contract.TenantID);
-            ViewData["UnitID"] = new SelectList(_context.Unit, "UnitID", "UnitID", contract.UnitID);
+            ViewData["UnitID"] = new SelectList(_context.Units, "UnitID", "UnitID", contract.UnitID);
+            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", contract.UserID);
             return View(contract);
         }
 
@@ -83,14 +80,13 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var contract = await _context.Contract.FindAsync(id);
+            var contract = await _context.Contracts.FindAsync(id);
             if (contract == null)
             {
                 return NotFound();
             }
-            ViewData["EmployeeID"] = new SelectList(_context.User, "UserID", "UserID", contract.EmployeeID);
-            ViewData["TenantID"] = new SelectList(_context.User, "UserID", "UserID", contract.TenantID);
-            ViewData["UnitID"] = new SelectList(_context.Unit, "UnitID", "UnitID", contract.UnitID);
+            ViewData["UnitID"] = new SelectList(_context.Units, "UnitID", "UnitID", contract.UnitID);
+            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", contract.UserID);
             return View(contract);
         }
 
@@ -99,7 +95,7 @@ namespace BMStorage.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ContractID,UnitID,TenantID,EmployeeID,StartDate,EndDate")] Contract contract)
+        public async Task<IActionResult> Edit(int id, [Bind("ContractID,UnitID,UserID,StartDate,EndDate")] Contract contract)
         {
             if (id != contract.ContractID)
             {
@@ -126,9 +122,8 @@ namespace BMStorage.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EmployeeID"] = new SelectList(_context.User, "UserID", "UserID", contract.EmployeeID);
-            ViewData["TenantID"] = new SelectList(_context.User, "UserID", "UserID", contract.TenantID);
-            ViewData["UnitID"] = new SelectList(_context.Unit, "UnitID", "UnitID", contract.UnitID);
+            ViewData["UnitID"] = new SelectList(_context.Units, "UnitID", "UnitID", contract.UnitID);
+            ViewData["UserID"] = new SelectList(_context.Users, "UserID", "UserID", contract.UserID);
             return View(contract);
         }
 
@@ -140,10 +135,9 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var contract = await _context.Contract
-                .Include(c => c.Employee)
-                .Include(c => c.Tenant)
+            var contract = await _context.Contracts
                 .Include(c => c.Unit)
+                .Include(c => c.User)
                 .FirstOrDefaultAsync(m => m.ContractID == id);
             if (contract == null)
             {
@@ -158,15 +152,15 @@ namespace BMStorage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var contract = await _context.Contract.FindAsync(id);
-            _context.Contract.Remove(contract);
+            var contract = await _context.Contracts.FindAsync(id);
+            _context.Contracts.Remove(contract);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ContractExists(int id)
         {
-            return _context.Contract.Any(e => e.ContractID == id);
+            return _context.Contracts.Any(e => e.ContractID == id);
         }
     }
 }

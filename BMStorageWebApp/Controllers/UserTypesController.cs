@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +22,7 @@ namespace BMStorage.Controllers
         // GET: UserTypes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.UnitType.ToListAsync());
+            return View(await _context.UserTypes.ToListAsync());
         }
 
         // GET: UserTypes/Details/5
@@ -33,7 +33,7 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var userType = await _context.UnitType
+            var userType = await _context.UserTypes
                 .FirstOrDefaultAsync(m => m.UserTypeID == id);
             if (userType == null)
             {
@@ -54,7 +54,7 @@ namespace BMStorage.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserTypeID,Type")] UserType userType)
+        public async Task<IActionResult> Create([Bind("UserTypeID,UserTypeName")] UserType userType)
         {
             if (ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var userType = await _context.UnitType.FindAsync(id);
+            var userType = await _context.UserTypes.FindAsync(id);
             if (userType == null)
             {
                 return NotFound();
@@ -86,7 +86,7 @@ namespace BMStorage.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserTypeID,Type")] UserType userType)
+        public async Task<IActionResult> Edit(int id, [Bind("UserTypeID,UserTypeName")] UserType userType)
         {
             if (id != userType.UserTypeID)
             {
@@ -124,7 +124,7 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var userType = await _context.UnitType
+            var userType = await _context.UserTypes
                 .FirstOrDefaultAsync(m => m.UserTypeID == id);
             if (userType == null)
             {
@@ -139,15 +139,15 @@ namespace BMStorage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var userType = await _context.UnitType.FindAsync(id);
-            _context.UnitType.Remove(userType);
+            var userType = await _context.UserTypes.FindAsync(id);
+            _context.UserTypes.Remove(userType);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UserTypeExists(int id)
         {
-            return _context.UnitType.Any(e => e.UserTypeID == id);
+            return _context.UserTypes.Any(e => e.UserTypeID == id);
         }
     }
 }

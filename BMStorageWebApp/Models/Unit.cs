@@ -15,8 +15,10 @@ namespace BMStorage.Models
       public string UnitLocation { get; set; }
 
 
+      /* Navigation Properties */
+      public UnitType UnitType { get; set; }
 
       //public ICollection<Unit> Units { get; set; }
 
-    }
+   }
 }

@@ -1,4 +1,4 @@
-﻿@model BMStorage.Models.Unit
+@model BMStorage.Models.Unit
 
 @{
     ViewData["Title"] = "Delete";
@@ -12,17 +12,17 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UnitTypeID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UnitTypeID)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.UnitLocation)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UnitLocation)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UnitType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UnitType.UnitTypeID)
+        </dd class>
     </dl>
     
     <form asp-action="Delete">

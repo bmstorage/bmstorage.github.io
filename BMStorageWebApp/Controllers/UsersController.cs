@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +22,8 @@ namespace BMStorage.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
-            return View(await _context.User.ToListAsync());
+            var bMStorageContext = _context.Users.Include(u => u.UserType);
+            return View(await bMStorageContext.ToListAsync());
         }
 
         // GET: Users/Details/5
@@ -33,7 +34,8 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User
+            var user = await _context.Users
+                .Include(u => u.UserType)
                 .FirstOrDefaultAsync(m => m.UserID == id);
             if (user == null)
             {
@@ -46,6 +48,7 @@ namespace BMStorage.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
+            ViewData["UserTypeID"] = new SelectList(_context.UserTypes, "UserTypeID", "UserTypeID");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace BMStorage.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserID,UserTypeID,GateCode,FirstName,LastName,StreetAddress,Email,PhoneNumber,City,State,ZipCode")] User user)
+        public async Task<IActionResult> Create([Bind("UserID,UserTypeID,GateCode,FirstName,LastName,Email,Phone,StreetAddress,City,State,Zip")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace BMStorage.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserTypeID"] = new SelectList(_context.UserTypes, "UserTypeID", "UserTypeID", user.UserTypeID);
             return View(user);
         }
 
@@ -73,11 +77,12 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User.FindAsync(id);
+            var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
+            ViewData["UserTypeID"] = new SelectList(_context.UserTypes, "UserTypeID", "UserTypeID", user.UserTypeID);
             return View(user);
         }
 
@@ -86,7 +91,7 @@ namespace BMStorage.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserID,UserTypeID,GateCode,FirstName,LastName,StreetAddress,Email,PhoneNumber,City,State,ZipCode")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("UserID,UserTypeID,GateCode,FirstName,LastName,Email,Phone,StreetAddress,City,State,Zip")] User user)
         {
             if (id != user.UserID)
             {
@@ -113,6 +118,7 @@ namespace BMStorage.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserTypeID"] = new SelectList(_context.UserTypes, "UserTypeID", "UserTypeID", user.UserTypeID);
             return View(user);
         }
 
@@ -124,7 +130,8 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var user = await _context.User
+            var user = await _context.Users
+                .Include(u => u.UserType)
                 .FirstOrDefaultAsync(m => m.UserID == id);
             if (user == null)
             {
@@ -139,15 +146,15 @@ namespace BMStorage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var user = await _context.User.FindAsync(id);
-            _context.User.Remove(user);
+            var user = await _context.Users.FindAsync(id);
+            _context.Users.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UserExists(int id)
         {
-            return _context.User.Any(e => e.UserID == id);
+            return _context.Users.Any(e => e.UserID == id);
         }
     }
 }

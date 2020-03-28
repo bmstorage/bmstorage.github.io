@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,7 +22,8 @@ namespace BMStorage.Controllers
         // GET: Units
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Unit.ToListAsync());
+            var bMStorageContext = _context.Units.Include(u => u.UnitType);
+            return View(await bMStorageContext.ToListAsync());
         }
 
         // GET: Units/Details/5
@@ -33,7 +34,8 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var unit = await _context.Unit
+            var unit = await _context.Units
+                .Include(u => u.UnitType)
                 .FirstOrDefaultAsync(m => m.UnitID == id);
             if (unit == null)
             {
@@ -46,6 +48,7 @@ namespace BMStorage.Controllers
         // GET: Units/Create
         public IActionResult Create()
         {
+            ViewData["UnitTypeID"] = new SelectList(_context.UnitTypes, "UnitTypeID", "UnitTypeID");
             return View();
         }
 
@@ -62,6 +65,7 @@ namespace BMStorage.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UnitTypeID"] = new SelectList(_context.UnitTypes, "UnitTypeID", "UnitTypeID", unit.UnitTypeID);
             return View(unit);
         }
 
@@ -73,11 +77,12 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var unit = await _context.Unit.FindAsync(id);
+            var unit = await _context.Units.FindAsync(id);
             if (unit == null)
             {
                 return NotFound();
             }
+            ViewData["UnitTypeID"] = new SelectList(_context.UnitTypes, "UnitTypeID", "UnitTypeID", unit.UnitTypeID);
             return View(unit);
         }
 
@@ -113,6 +118,7 @@ namespace BMStorage.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UnitTypeID"] = new SelectList(_context.UnitTypes, "UnitTypeID", "UnitTypeID", unit.UnitTypeID);
             return View(unit);
         }
 
@@ -124,7 +130,8 @@ namespace BMStorage.Controllers
                 return NotFound();
             }
 
-            var unit = await _context.Unit
+            var unit = await _context.Units
+                .Include(u => u.UnitType)
                 .FirstOrDefaultAsync(m => m.UnitID == id);
             if (unit == null)
             {
@@ -139,15 +146,15 @@ namespace BMStorage.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var unit = await _context.Unit.FindAsync(id);
-            _context.Unit.Remove(unit);
+            var unit = await _context.Units.FindAsync(id);
+            _context.Units.Remove(unit);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UnitExists(int id)
         {
-            return _context.Unit.Any(e => e.UnitID == id);
+            return _context.Units.Any(e => e.UnitID == id);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BMStorage.Models.Contract>
+@model IEnumerable<BMStorage.Models.Contract>
 
 @{
     ViewData["Title"] = "Index";
@@ -22,10 +22,7 @@
                 @Html.DisplayNameFor(model => model.Unit)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tenant)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Employee)
+                @Html.DisplayNameFor(model => model.User)
             </th>
             <th></th>
         </tr>
@@ -43,10 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Unit.UnitID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Tenant.UserID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Employee.UserID)
+                @Html.DisplayFor(modelItem => item.User.UserID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ContractID">Edit</a> |
