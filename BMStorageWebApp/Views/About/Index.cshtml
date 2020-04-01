@@ -1,0 +1,147 @@
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div id="siteContainer">
+    <div class="parallax-home">
+
+        <div class="header" id="myHeader">
+            <section class="headings">
+
+                <div class="sticky">
+                    <img class="Site-Logo" src="../images/Thinner Banner.jpg" alt="Logo of a Lock">
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeCSNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a onclick="closeCSNav()">Click to go to Static Site</a>
+                        <a href="../homeStatic.html">Home</a></li>
+                        <a href="../info.html"> Info / Units</a></li>
+                        <a class="active" href="../register.html">Register</a></li>
+                    </div>
+                </div>
+            </section>
+
+            <div class="holder">
+                <span class="main-menu-button" style="font-size:30px;cursor:pointer" onclick="openCSNav()">&#9776; Menu</span>
+            </div>
+        </div>
+
+
+
+        <div class="content-main">
+            <!--  A call to action to make a sign up for a unit  -->
+            <section class="call-to-action">
+                <!-- Call To Action-->
+                <section class="cta-img">
+                    <p class="intro-p">
+                        Welcome to the BM Storage Web applicaiton!
+                    </p>
+                    <p class="intro-p">
+                        Call for Development Today!
+                    </p>
+                    <button onclick="clickContact()" class="btn">Contact Us!</button>
+                </section>
+            </section>
+
+            <br>
+
+                <!-- Expectations -->
+            <!-- Get acutal date when when Bart got set up -->
+            <section class="expectation-section">
+                <section class="company-motto">
+                    <h3>Expectations</h3>
+                    <p>
+                        This Web application is for a Storage Unit Company website. Using ASP.NET (MVC) this app currently has the potential to hold data for Units, Unit Types, Users, User Types, & Contracts.
+                        It cannot yet take in data and process transactions but can be used to display great information for daily tasks. CRUD (Create, Read, Update, and Delete) functionality is available for the models previously mentioned.
+                    </p>
+
+                </section>
+            </section>
+
+ <section class="information-h2">
+            <section class="homepage-sections">
+                <p>Contract Information</p>
+                    Contract Number,
+                    Unit Number,
+                    Tenant,
+                    Start of Contract,
+                    & End of Contract
+            </section>
+
+                <br>
+
+
+            <!-- Fill this with Json File that holds Unit info & images -->
+            <section class="homepage-sections">
+                <p>Unit Information</p>
+                    Unit Number,
+                    Unit Type,
+                    & Unit Location 
+            </section>
+
+                <br>
+
+
+             <section class="homepage-sections">
+                <p>Unit Type Information</p>
+                    Unit Type (Numbered),
+                    Unit Type Name,
+                    Unit Width,
+                    Unit Height, 
+                    Unit Depth,
+                    & Unit Price 
+            </section>
+
+            <br>
+
+
+           <section class="homepage-sections">
+                <p>User Metrics</p>
+                    User ID,
+                    Unit Type (by Number),
+                    Gate Code,
+                    First Name,
+                    Last Name,
+                    Email,
+                    Phone-Number,
+                    Street Address,
+                    City,
+                    State,
+                    & Zip Code
+            </section>
+
+            <br>
+
+             <section class="homepage-sections">
+                <p>User Type</p>
+                    Type of User (By ID)
+                    & Type of User (By Name)
+            </section>
+
+ </section>
+
+            <section class="information-h2" id="contact-section">
+                <h2>Contact information for Developers </h2>
+                <div class="article-box">
+                    <div class="contact-p">
+                        <p> Ryan Harris:</p>
+                        <p> Ryanpaulharris18@gmail.com</p>
+                        <span class="phone-number">&#9742; (719) 580-6995</span>
+                        <p> Ryan Cross:</p>
+                        <p> ryanlukecross1@gmail.com</p>
+                        
+                        <a class="registration-link" href="https://github.com/bmstorage/bmstorage.github.io"> Github Link</a>
+
+                    </div>
+                </div>
+            </section>
+
+</div>
+      
+        </div>
+    </div>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/clickContact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</html>

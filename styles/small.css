@@ -19,7 +19,7 @@ p - font-family: 'Raleway', sans-serif;
  */
  @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap');
  
@@ -75,19 +75,19 @@ h1 {
 
 
 h2 {
- color: rgb(0, 0, 0);
- font-size: 35px;
- font-family: 'Rock Salt', sans-serif;
- text-align: center;
- padding: 0.25em;
- /* text-shadow: 2px 2px rgb(193, 193, 193); */
- border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: 'Dekko', cursive;
+    text-align: center;
+    padding: 0.25em;
+    /* text-shadow: 2px 2px rgb(193, 193, 193); */
+    border-radius: 15px;
 }
 
 h3 {
   color: rgb(0, 0, 0);
   font-size: 30px;
-  font-family: 'Rock Salt', sans-serif;
+  font-family: 'Dekko', cursive;
   text-align: center;
   padding: 0.25em;
   /* text-shadow: 2px 2px rgb(193, 193, 193); */
@@ -320,7 +320,7 @@ p.intro-p {
   display: block;
   font-size: 2em;
   color: black;
-  font-family: 'Rock Salt', crusive;
+ @import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
   text-align: center;
   font-size: 25px;
   padding-left: 1em;
@@ -450,22 +450,21 @@ p.intro-p {
 
 
 .contact {
-  background-image: url("../images/cardboard-texture2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: block;
-  font-family: 'Rock Salt', cursive;
-  text-align: center;
-  display: block;
-  font-size: 20px;
-  padding-bottom: 2em;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  
+    background-image: url("../images/cardboard-texture2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: block;
+    font-family: 'Dekko', cursive;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    padding-bottom: 2em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
 
 iframe

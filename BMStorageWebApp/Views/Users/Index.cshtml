@@ -4,11 +4,23 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Users</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@* <form asp-controller="User" asp-action="Index" method="get">
+    <p>
+
+        <select asp-for="UserTypeID" asp-items="UserTypeViewModel.UserTypes">
+            <option value="">All</option>
+        </select>
+
+        Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form> *@
 <table class="table">
     <thead>
         <tr>

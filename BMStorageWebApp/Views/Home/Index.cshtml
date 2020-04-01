@@ -1,30 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<!DOCTYPE html>
-<html lang="en">
-
-</html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/small.css">
-    <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/large.css">
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
-
-    <title> Homepage </title>
-    <!-- Home Page for B&M Storage-->
-
-</head>
-
-<body>
+<div id="siteContainer">
     <div class="parallax-home">
 
         <div class="header" id="myHeader">
@@ -34,10 +11,10 @@
                     <img class="Site-Logo" src="../images/Thinner Banner.jpg" alt="Logo of a Lock">
                 </div>
                 <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeCSNav()">&times;</a>
                     <div class="overlay-content">
-                        <a onclick="closeNav()">Menu</a>
-                        <a href="../index.html">Home</a></li>
+                        <a onclick="closeCSNav()">Click to go to Static Website</a>
+                        <a href="../homeStatic.html">Home</a></li>
                         <a href="../info.html"> Info / Units</a></li>
                         <a class="active" href="../register.html">Register</a></li>
                     </div>
@@ -45,8 +22,8 @@
             </section>
 
             <div class="holder">
-                <span class="main-menu-button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-            </div>
+                <span class="main-menu-button" style="font-size:30px;cursor:pointer" onclick="openCSNav()">&#9776; Menu</span>
+            </div>             
         </div>
 
 
@@ -100,7 +77,6 @@
 
                 <section class="unit-4">
                     <!-- Entering some place holder text to be edited later -->
-                    <image>
                         <section class="details">
                             <h3>RV / Boat Storage</h3>
                             <img class="unit-image" src="../images/unit-photo-1.jpg" alt="An open lot for storing boats and RVs">
@@ -139,22 +115,12 @@
                 </div>
             </section>
 
-
-            <footer>
-                <div class="footer">
-                    <p class='footer-text'>
-                        &copy; <span id="currentDate">
-                            &star; B&M Storage
-                        </span>
-                    </p>
-                </div>
-            </footer>
+</div>
+      
         </div>
     </div>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/clickContact.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-</body>
-
 </html>
+

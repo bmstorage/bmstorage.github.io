@@ -1,0 +1,577 @@
+ /* ------------------------------------------------------------------------------------------------------------------------------
+              B&M Storage - Small
+ ------------------------------------------------------------------------------------------------------------------------------ 
+ Basic outline
+- Home
+- Info 
+- Register
+- Create Account  
+- Contact
+
+Colors & Fonts:
+H1 & H2 - font-family: 'IM Fell Great Primer SC', serif;
+p - font-family: 'Raleway', sans-serif;
+#929E9A - Teal Green
+#BBC0C6 - Light Gray
+#717277 - Dark Gray
+#F2F2F2 - Off White
+#3D322F - Red Brown
+ */
+ @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap');
+ 
+ body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+ /* Logo & text */
+.headings{
+  /* background-repeat: no-repeat; */
+  width: 100%;;
+  display: block;
+}
+
+.header{
+  width: 100%;
+}
+
+div.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* margin-left: -0.25em; */
+  /* background-color: yellow; */
+  /* padding: 50px; */
+  /* font-size: 20px; */
+}
+
+ /* The Padlock */
+.Site-Logo{
+    width: 100%;
+    z-index: 10;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+h1 {
+  color:  #111826;
+  font-size: 25px;
+  font-family: 'IM Fell Great Primer SC', serif;
+  text-align: center;
+  text-shadow: 2px 2px  #8F94A6  ;
+  letter-spacing: 18px;
+}
+
+
+h2 {
+ color: rgb(0, 0, 0);
+ font-size: 35px;
+ font-family: 'Dekko', cursive;
+ text-align: center;
+ padding: 0.25em;
+ /* text-shadow: 2px 2px rgb(193, 193, 193); */
+ border-radius: 15px;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: 'Dekko', cursive;
+  text-align: center;
+  padding: 0.25em;
+  /* text-shadow: 2px 2px rgb(193, 193, 193); */
+  border-radius: 15px;
+}
+
+h4 {
+ color: rgb(0, 0, 0);
+ font-size: 30px;
+ /* border-radius: 5px; */
+ font-family: 'Ubuntu', cursive;
+ z-index: 2;
+ text-align: center;
+ margin-left: 2em;
+ margin-right: 2em;
+ /* text-shadow: 2px 2px rgb(193, 193, 193); */
+ font-style: bold;
+}
+
+p{
+  font-family: 'IM Fell Great Primer SC', serif;
+  font-size: 20px;
+}
+
+.info-sections{
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.info-sections li{
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 1em;
+}
+/* -----------------------------------------------------------------------------------------------------------------------------
+            Parrallax Images HOME
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+.parallax-home{
+  /* The image used */
+  background-image: url("../images/open-unit.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -10;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: inital;
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: bottom 0px right -100px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+
+}
+
+
+.top-container {
+  background-color: #f1f1f1;
+  /* padding: 30px; */
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content{
+  margin-top: 2em;
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 102%;
+}
+
+/* NAVIGATION */
+.main-menu-button{
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ text-align: center;
+ font-family: 'IM Fell Great Primer SC', serif; 
+ margin-top: -20px;
+ background-image: url('../images/texture.png');
+ background-size: cover;
+ font-size: 20px;
+ padding: 5px;
+}
+
+
+.holder{
+  background-image: url("../images/unit-door-pattern.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50;
+  /* margin-top: -2em; */
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: -5;
+  left: 0;
+  /* margin-right: 50px; */
+  overflow-y: hidden;
+  transition: 0.25s;
+  background-image: url('../images/texture.png');
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1em;
+}
+
+.overlay-content {
+  position: relative;
+  /* top: 25%; */
+  width: 100%;
+  text-align: center;
+  /* margin-top: -20px; */
+
+}
+
+.overlay a {
+  padding: 32px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: 'IM Fell Great Primer SC', serif; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  font-size: 60px;
+  z-index: 5;
+  color: darkred;
+  /* margin-bottom: -10em; */
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 10px;
+  /* right: 35px; */
+  }
+}
+
+.homepage-sections{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  margin: auto;
+  text-align: center;
+}
+
+
+.homepage-h2{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture.jpg");
+  font-size: 20px;
+}
+
+.information-h2{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture.jpg");
+  font-family: 'IM Fell Great Primer SC', serif; 
+}
+
+.expectation-section{
+  display: block;
+  text-align: center;
+  z-index: 0;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture2.jpg");
+  padding: 10px;
+  background-size: contain;
+}
+
+
+.image-test{
+  background-image: url("/images/opendoor.jpg");
+  z-index: 10;
+}
+
+
+#cta{
+  z-index: -10;
+}
+
+.call-to-action{
+  margin-top: 1em;
+  display: block;
+}
+
+p.intro-p {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  color: black;
+  font-family: 'IM Fell Great Primer SC', serif; 
+  text-align: center;
+  font-size: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.25em;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  background-color: #FFCC66;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'IM Fell Great Primer SC', serif;  
+}
+
+.banner-h2{
+    display: none;
+}
+
+.call-to-action{
+  background-image: url("../images/cardboard-texture.jpg");
+}
+
+/* Set a style for the submit button */
+.cta {
+  /* background-color: #4CAF50; */
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.cta:hover {
+  opacity: 1;
+}
+
+.cta-h2 {
+  font-family: 'Ubuntu', cursive;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   border-bottom: 5px solid black;
+   text-align: center;
+   padding: 0.25em;
+   /* text-shadow: 2px 2px rgb(193, 193, 193); */
+   border-radius: 15px;
+   margin-top: -0.75em;
+ }
+
+ .unit-image{
+  width: 65%;
+  margin-top: 1em;
+}
+
+.unit-1, .unit-2, .unit-3, .unit-4{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.unit-1
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-box-top2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unit-2
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unit-3
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.unit-4
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../images/cardboard-texture2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.registration-link {
+  display: block;
+  margin-top: 1em;
+  color: black;
+}
+
+.info{
+
+  margin: 0 auto;
+  margin-left: 2em;
+  background-image: url("../images/cardboard-texture2.jpg");
+  padding: 2em;
+  font-size: 20px;
+  margin-bottom: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+
+.details p{
+  /* padding:1em; */
+  font-size: 30px;
+}
+
+.details h3{
+  padding-top:1em;
+  font-size: 20px;
+}
+
+
+.contact {
+  background-image: url("../images/cardboard-texture2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  font-family: 'IM Fell Great Primer SC', serif; 
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 2em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  
+}
+
+iframe
+
+.phone-number{
+  font-family: 'IM Fell Great Primer SC', serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+}
+
+.footer{
+  background-image: url("../images/footer.jpg");
+  margin-top: -2em;
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+
+.footer-text{
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+/* Form CSS */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: 2em;
+  background-image: url("../images/cardboard-texture2.jpg");
+  padding: 2em;
+  font-size: 20px;
+  margin-bottom: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DurationDate{
+display: inline-block;
+min-width: 200px;
+}
+
+label{
+  display: inline-block;
+  min-width: 200px;
+
+}
+
+form div{
+  margin-top: 10px;
+}
+
+
+.align-top{
+  vertical-align: top;
+}
+
+.flex{
+display: block;
+margin-bottom: 3em;
+}
+
+
+.flexly {
+  display: flex;
+  align-items: center;
+}
+
+
+
+#stormSeverity{
+  margin-left: 5em;
+ /* border: 5px solid orange; */
+ width: 180px;
+}
+
+#commentBox{
+  margin-left: -1.8em;
+}
+
+#submitReset{
+  margin-bottom: 3em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+#stormRegion{
+  width: 165px;
+}
+
+.noMargin {
+  margin-left: 12em;
+}
+
+
+
+/* ------------------------------------------
+THESE ARE THE Thanks Page RULES
+-------------------------------------- */
+
+.stormCenterParagraphs{
+font-size: 15px;
+text-align: center;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+

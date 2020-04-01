@@ -62,13 +62,13 @@
     padding: 1em;
   }
 
-  .contact {
-    font-family: 'Rock Salt', cursive;
-    text-align: center;
-    display: block;
-    font-size: 40px;
-    padding-bottom: 2em;
-  }
+    .contact {
+        font-family: 'Dekko', cursive;
+        text-align: center;
+        display: block;
+        font-size: 40px;
+        padding-bottom: 2em;
+    }
 
   .btn {
     font-size: 50px;

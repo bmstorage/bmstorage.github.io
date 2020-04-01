@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\BMStorageWebApp",
-    "\\BMStorageWebApp\\Models"
+    "\\BMStorageWebApp\\Models",
+    "\\BMStorageWebApp\\Views",
+    "\\BMStorageWebApp\\Views\\Home",
+    "\\BMStorageWebApp\\wwwroot\\lib",
+    "\\BMStorageWebApp\\wwwroot\\lib\\bootstrap",
+    "\\BMStorageWebApp\\wwwroot\\lib\\bootstrap\\dist",
+    "\\styles"
   ],
-  "SelectedNode": "\\BMStorageWebApp\\Models\\Contract.cs",
+  "SelectedNode": "\\BMStorageWebApp\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

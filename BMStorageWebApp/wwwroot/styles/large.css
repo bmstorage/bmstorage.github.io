@@ -1,0 +1,80 @@
+@media (min-width: 1200px){
+
+    body{
+    margin: auto;
+    background-color: rgb(240, 236, 236);
+    }
+
+    .parallax-home{
+        background-position: bottom -100px right 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        background-image: url("../images/unit-photo-1.jpg");
+        border-right-style: inset;
+        border-right-color: rgb(115, 115, 115);
+        border-left-style: outset;
+        border-left-color:  rgb(115, 115, 115);
+        border-top-style: none;
+        border-bottom-style: none;
+        margin-left:auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+
+    }
+
+    .overlay {
+     left: unset;
+     width: 65%;
+      }
+
+      .Site-Logo{
+        width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+
+      }
+
+      .sticky{
+          background: url("../images/Artboard\ 5.png");
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
+    
+
+    .header{
+        width: 100%;
+        margin-left:auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .content-main{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    }
+
+.footer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stormCenterMain, .information-h2, .content {
+    width: 75%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}

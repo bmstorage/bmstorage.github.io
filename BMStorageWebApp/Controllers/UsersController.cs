@@ -19,8 +19,11 @@ namespace BMStorage.Controllers
             _context = context;
         }
 
+        [BindProperty(SupportsGet = true)]
+        public string OrderBy { get; set; }
+
         // GET: Users
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string userType, string SearchString, string OrderBy, Boolean sortOrder)
         {
             var bMStorageContext = _context.Users.Include(u => u.UserType);
             return View(await bMStorageContext.ToListAsync());
